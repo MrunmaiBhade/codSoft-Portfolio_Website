@@ -1,0 +1,616 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif; /* Montserrat for body */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #EEE2DE; /* Updated background color */
+    color: #333333; /* Dark Gray Text */
+}
+#welcome-window {
+    padding: 20px;
+    background-color: #EEE2DE;
+    color: #2D3250;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
+    justify-content: center;
+    position:absolute;
+    left:350px;
+    top:100px;
+    height:300px;
+
+    
+}
+
+#welcome-window h3 {
+    color: #EA906C;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+#welcome-window p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+    font-size:30px;
+}
+
+
+#welcome-window h3 {
+    color: #EA906C;
+    margin-bottom: 10px;
+    /* position:relative;
+    left:300px;
+    top:100px;
+    justify-content: center; */
+}
+
+#welcome-window p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+h2{
+    font-family: 'Lato',sans-serif;
+}
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.vertical-section {
+    width: 200px;
+    background-color: #EA906C; /* Salmon Orange */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle Box Shadow */
+    color: #FFFFFF; /* White Text */
+}
+
+.profile-image img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.personal-info {
+    margin-top: 20px;
+}
+.heading{
+   justify-content: center;
+}
+.content-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column; /* Adjusted to column layout */
+}
+.vertical-section p{
+    font-size: 18px;
+    font-weight: 600;
+}
+.vertical-section p:hover{
+    color:#001F3F;
+    font-size: x-large;
+}
+.image{
+    display:inline;
+}
+.img4{
+    height:70px;
+    width:70px;
+    border-radius: 20px;
+}
+.img1{
+    height:50px;
+    width:50px;
+}
+.img2{
+    height:50px;
+    width:50px;
+}
+.img3{
+    height:50px;
+    width:50px;
+}
+.img5{
+    height:60px;
+    width:60px;
+}
+.img-container {
+    flex: 1;
+    order: 2; 
+    margin-top:280px;
+    text-align: right;
+    margin-left: auto;
+    /* Change the order to 2 to move it to the right */
+}
+.img6 {
+    float:right;
+    position: absolute;
+    right: 50px; /* Adjust right position */
+    top: 250px; /* Adjust top position */
+    height: 400px;
+    width: 400px;
+    z-index: 2;
+}
+
+.img7 {
+    float:right;
+    position: absolute;
+    right: 50px; /* Adjust right position */
+    top: 250px; /* Adjust top position */
+    height: 400px;
+    width: 400px;
+    z-index: 1;
+}
+
+
+.horizontal-navbar {
+    background-color: #001F3F; /* Navy Blue */
+    color: #F2F2F2; /* Light Grayish White Text */
+    padding: 10px 20px; /* Adjusted padding */
+    display: flex;
+    height:70px;
+    justify-content: center;
+    align-items: center; /* Center items vertically */
+    width: 100%; /* Set navbar width to 100% */
+}
+.horizontal-navbar a {
+    text-decoration: none;
+    color: #F2F2F2; /* Light Grayish White Text */
+    font-weight: bold;
+    font-size: 25px; /* Increased font size */
+    margin: 0 20px; /* Adjusted margin */
+    transition: color 0.3s ease;
+    font-family: 'pacifico',cursive; /* Lato for headings */
+}
+  /* Add this CSS for hover effects */
+  .image {
+    display: inline-block;
+    margin-right: 10px;
+    transition: transform 0.3s ease; /* Apply a smooth transition effect */
+}
+
+.image:hover {
+    transform: scale(1.2); /* Scale the icon on hover */
+}
+.horizontal-navbar a:hover {
+    color: #FF4136; /* Red on Hover */
+}
+
+.horizontal-navbar a.active {
+    color: #FF4136; /* Red for Active State */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+.main-content {
+    float: left;
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.main-content h3{
+    font-size:xx-large;
+}
+.content-window {
+    
+    flex: 1;
+    order: 1; /* Change the order to 1 to move it to the left */
+    padding: 20px;
+    background-color: #EEE2DE;
+    color: #2D3250;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.content-window h3 {
+    color: #EA906C; /* Header color */
+    margin-bottom: 10px;
+}
+
+.content-window p {
+    display: block;
+    flex:2;
+    order:1;
+    justify-content: left;
+    
+    margin-bottom: 15px;
+    line-height: 1.5;
+    font-family: 'Monserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    width: calc(100% - 20px); /* Adjust the width, considering padding */
+    box-sizing: border-box;
+}
+#about-window {
+    display: flex;
+}
+#about-window h3 {
+    padding:20px;
+    margin-left:20px;
+    color: #EA906C;
+    margin-bottom: 10px;
+}
+
+#about-window p {
+    flex:1;
+    text-align: left;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+  
+}
+
+.footer-container {
+    margin-top: auto;
+}
+
+footer {
+    background-color: #001F3F; /* Navy Blue */
+    padding: 10px;
+    text-align: center;
+    color: #F2F2F2; /* Light Grayish White Text */
+}
+footer p {
+    margin: 0;
+}
+
+/* Add this to your existing CSS file or create a new one */
+
+
+/* Style adjustments for smaller screens */
+@media screen and (max-width: 600px) {
+    .content-window {
+        padding: 15px;
+    }
+}
+/* resume section */
+/* Additional styling for the resume page */
+/* Additional styling for the resume page */
+/* ... (previous styles) ... */
+
+/* Additional styling for the resume page */
+
+/* ... (previous styles) ... */
+
+/* Additional styling for the resume page */
+
+.resume-container {
+    align-items: center; /* Center content vertically */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping if the content is too wide */
+}
+
+.logo-container {
+    position:absolute;
+    top:70px;
+    left:700px;
+    
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 200px; /* Adjust the width as needed */
+    height: 150px;
+}
+
+.resume-partition {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.details-partition {
+    border-right: 2px solid #B1A296; /* Add a border between partitions */
+}
+
+.skills-partition {
+    border-left: 2px solid #B1A296; /* Add a border between partitions */
+}
+
+.resume-partition h4 {
+    margin-bottom: 10px;
+    color: #EA906C; /* Header color */
+}
+
+.resume-partition p {
+    margin-bottom: 10px;
+}
+
+/* ... (previous styles) ... */
+
+/* Additional styling for the resume page */
+
+.skill {
+    margin-bottom: 15px;
+}
+
+.skill p {
+    margin-bottom: 3px;
+    font-weight: bold;
+}
+
+.skill-bar {
+    width: 100%;
+    background-color: #B1A296; /* Background color for the progress bar */
+    border-radius: 5px;
+    height: 10px; /* Adjusted height of the progress bar */
+    margin-bottom: 3px;
+}
+
+.skill-progress {
+    border-radius: 5px;
+    height: 100%; /* Adjusted height to represent the progress */
+    width: 0; /* Initial width set to 0 */
+}
+
+.skill-percent {
+    text-align: right;
+    color: #333333; /* Dark font color */
+    font-weight: bold;
+}
+
+/* ... (remaining styles) ... */
+
+#download-resume {
+    background-color: #EA906C; /* Download button background color */
+    color: #fff; /* Download button text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+#download-resume:hover {
+    background-color: #B1A296; /* Hover color for download button */
+}
+
+.footer-container {
+    margin-top: auto;
+}
+
+
+
+/* project page */
+/* Adjustments for the projects window */
+.projects-window {
+    display: flex;
+    align-items: center;
+}
+
+.projects-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+}
+
+.projects-item {
+    flex: 0 0 auto;
+}
+
+.card {
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid #B1A296;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+.project-details {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.project-details h2 {
+    margin-bottom: 5px;
+    color: #333333;
+}
+
+.project-details p {
+    margin-bottom: 5px;
+    line-height: 1.5;
+    color: #333333;
+}
+
+.projects-item a {
+    display: block;
+    background-color: #EA906C;
+    color: #fff;
+    padding: 5px;
+    border: none;
+    border-radius: 0 0 8px 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.projects-item a:hover {
+    background-color: #B1A296;
+}
+
+
+/* contact page */
+
+
+#contact-window {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Add this line to align items with space between */
+}
+
+.contact-content {
+    flex: 1;
+    text-align: center;
+    background-color: #EEE2DE;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: calc(50% - 20px); /* Adjusted maximum width for content */
+    box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+.contact-image {
+    display:inline;
+    /* max-width: calc(50% - 20px); Adjusted maximum width for image */
+    /* box-sizing: border-box; Ensures padding is included in the width */
+}
+
+#contact-window h3 {
+    color: #EA906C;
+    margin-bottom: 20px;
+}
+
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333333;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #B1A296;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #EA906C;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #B1A296;
+}
+
+/* Social Logos */
+.social-logos {
+    margin-top: 20px;
+}
+
+.social-logos a {
+    display: inline-block;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-logos a:hover {
+    transform: scale(1.2);
+}
+
+.social-logos img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+/* Adjustments for smaller screens */
+/* Adjustments for smaller screens */
+/* Common adjustments for all sections */
+@media screen and (max-width: 1024px) {
+    .content-window,
+    .resume-partition,
+    .projects-window,
+    .contact-window,
+    .welcome-window,
+    .vertical-section {
+        padding: 15px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    /* Image container adjustments */
+    .img-container {
+        margin-top: 20px;
+        text-align: center; /* Center the images */
+    }
+
+    .img6,
+    .img7 {
+        position: static; /* Remove absolute positioning for smaller screens */
+        width: 100%; /* Full width for small screens */
+        height: auto;
+    }
+
+    /* Navbar adjustments */
+    .horizontal-navbar {
+        flex-direction: column; /* Stack items vertically for small screens */
+        align-items: stretch;
+    }
+
+    .horizontal-navbar a {
+        margin: 10px 0; /* Adjust margin for smaller screens */
+    }
+
+    /* Main content adjustments */
+    .main-content {
+        float: none; /* Remove float for smaller screens */
+    }
+
+    /* Footer adjustments */
+    .footer-container {
+        margin-top: 20px; /* Adjust margin for smaller screens */
+    }
+
+    /* Contact window adjustments */
+    .contact-content,
+    .contact-image {
+        max-width: 100%; /* Full width for small screens */
+        box-sizing: border-box;
+    }
+
+    /* Welcome window adjustments */
+    .welcome-window {
+        text-align: left; /* Adjust text alignment for better readability */
+    }
+}
